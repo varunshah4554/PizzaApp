@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="175.0" layoutX="14.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" width="182.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="175.0" layoutX="14.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" width="182.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="175.0" layoutX="14.0" layoutY="475.0" stroke="BLACK" strokeType="INSIDE" width="182.0" />
+      <ImageView fitHeight="114.0" fitWidth="182.0" layoutX="29.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pepperonipizza.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="152.0" layoutX="29.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawaiianpizza.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="170.0" layoutX="20.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@deluxepizza.jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="52.0" layoutY="245.0" mnemonicParsing="false" text="Order Pepperoni" onAction = "#handlePepperoni"/>
+      <Button layoutX="55.0" layoutY="418.0" mnemonicParsing="false" text="Order Hawaiian" onAction = "#handleHawaiian"/>
+      <Button layoutX="61.0" layoutY="605.0" mnemonicParsing="false" text="Order Deluxe" onAction = "#handleDeluxe" />
+      <Text layoutX="54.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Phone Number" />
+      <TextField fx:id="phonenumber" layoutX="214.0" layoutY="41.0" />
+      <Button alignment="BOTTOM_CENTER" layoutX="320.0" layoutY="320.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" text="Current Order" onAction = "#handleCurrent"/>
+      <Button alignment="BOTTOM_CENTER" layoutX="320.0" layoutY="493.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" text="Store Orders" onAction = "#handleStore"/>
+      <ImageView fitHeight="104.0" fitWidth="119.0" layoutX="348.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@carticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="122.0" layoutX="348.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@storeicon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
